@@ -3,6 +3,10 @@
     src: url('./res/Norse-Bold.otf');
 }
 
+:root {
+    --ocean-blue: #3476c2;
+}
+
 html {
     font-family: 'Courier New', Courier, monospace;
 }
@@ -123,7 +127,7 @@ figcaption a {
 
 form button {
     padding: 12px 32px;
-    background-color: #3476c2;
+    background-color: var(--ocean-blue);
     border: none;
     border-radius: 6px;
     color: #eee;
@@ -164,4 +168,14 @@ fieldset legend {
     color: #444;
     font-weight: bold;
     margin-bottom: 4px;
+}
+
+h6 {
+    font-size: 0.95rem;
+}
+
+h6 a {
+    color: var(--ocean-blue);
+    text-decoration: none;
+    font-weight: bold;
 }
