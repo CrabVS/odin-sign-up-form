@@ -3,6 +3,10 @@
     src: url('./res/Norse-Bold.otf');
 }
 
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 body {
     display: flex;
     flex-flow: row;
@@ -10,6 +14,10 @@ body {
     margin: 0 auto;
     background-color: #eee;
     min-height: 100vh;
+}
+
+em {
+    font-style: italic;
 }
 
 #side-container {
@@ -36,7 +44,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding-bottom: 30px;
     font-size: 1.6rem;
 }
 
@@ -74,7 +81,7 @@ form > button {
 }
 
 #main-header, fieldset, h6 {
-    max-width: 900px;
+    max-width: 780px;
 }
 
 #side-logo {
@@ -113,4 +120,8 @@ figcaption {
 
 figcaption a {
     color: #eee;
+}
+
+#main-header h1 {
+    margin: 10px 0;
 }
