@@ -1,3 +1,8 @@
+@font-face {
+    font-family: norse-bold;
+    src: url('./res/Norse-Bold.otf');
+}
+
 body {
     display: flex;
     flex-flow: row;
@@ -10,10 +15,11 @@ body {
 #side-container {
     flex: 1;
     background-image: url('./res/ian-schneider-WymR2nYtj5M-unsplash.jpg');
-    background-color: #eee;
+    background-color: #6b76b9;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 #main-container {
@@ -69,4 +75,42 @@ form > button {
 
 #main-header, fieldset, h6 {
     max-width: 900px;
+}
+
+#side-logo {
+    width: 100%;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 16%;
+}
+
+#side-logo > span {
+    font-family: norse-bold;
+    color: #eee;
+    font-size: 5rem;
+}
+
+.logo {
+    height: 100%;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #eee;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 0;
+}
+
+figcaption a {
+    color: #eee;
 }
